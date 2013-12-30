@@ -16,6 +16,9 @@ public class Bullet {
 		img = newBullet.getImage();
 		visible = true;
 	}
+	public Rectangle getBounds(){
+		return new Rectangle(x, y, 20, 10);
+	}
 	public int getX(){
 		return x;
 	}

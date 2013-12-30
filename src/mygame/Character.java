@@ -1,6 +1,7 @@
 package mygame;
 
 import java.awt.Image;
+import java.awt.Rectangle;
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 
@@ -22,8 +23,8 @@ public class Character {
 		nx = 0;
 		y = 276;
 		left = 150;
-		ammo = 30;
-		totalammo = 90;
+		ammo = 0;
+		totalammo = 0;
 		ammodiff = 0;
 		
 		bullets = new ArrayList();
@@ -53,6 +54,9 @@ public class Character {
 			}
 		}
 	}
+	public Rectangle getBounds(){
+		return new Rectangle(left, y, 50, 100);
+	}
 	public int getX(){
 		return x;
 	}
@@ -61,6 +65,12 @@ public class Character {
 	}
 	public Image getImage(){
 		return still;
+	}
+	public int getXD(){
+		return xd;
+	}
+	public int getLeft(){
+		return left;
 	}
 	public void keyPressed(KeyEvent e){
 		int key = e.getKeyCode();
