@@ -27,7 +27,7 @@ public class Board extends JPanel implements ActionListener, Runnable{
 		time = new Timer(5, this);
 		time.start();
 		ben = new BlueEnemy(1000, 276, "src/img/enemyblue.png");
-		ben2 = new BlueEnemy(1000, 276, "src/img/enemyblue.png");
+		ben2 = new BlueEnemy(1100, 276, "src/img/enemyblue.png");
 		gun = new Pistol(550, 355, "src/img/pistol.png");
 		
 	}
